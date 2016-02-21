@@ -1,0 +1,17 @@
+# Form
+form:
+    pattern: /form/(id)
+    controller: Form
+    extra:
+        layout: form
+        active:
+            manimenu: forms
+
+# Forms
+forms:
+    pattern: /forms(/page)
+    controller: Forms
+    extra:
+        layout: forms
+        active:
+            manimenu: forms

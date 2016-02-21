@@ -1,0 +1,21 @@
+# Form
+form:
+    pattern: /form(/id)
+    controller: Form
+    extra:
+        layout: form
+        active:
+            mainmenu: forms
+
+# Forms
+forms:
+    pattern: /forms(/page)
+    controller: Forms
+    action:
+        post: CopyController
+        patch: BatchController
+        put: FilterController
+    extra:
+        layout: forms
+        active:
+            mainmenu: forms

@@ -1,0 +1,21 @@
+# Entry
+entry:
+    pattern: /entry(/id)
+    controller: Entry
+    extra:
+        layout: entry
+        active:
+            mainmenu: entries
+
+# Entries
+entries:
+    pattern: /entries(/page)
+    controller: Entries
+    action:
+        post: CopyController
+        patch: BatchController
+        put: FilterController
+    extra:
+        layout: entries
+        active:
+            mainmenu: entries
